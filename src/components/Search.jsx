@@ -124,6 +124,36 @@ function Search({ properties }) {
           <PropertyList properties={results} />
         </div>
       )}
+
+      {/* FAVOURITES TAB */}
+      {activeTab === "favourites" && (
+        <div className="search-container">
+          <h2>Your Favourites</h2>
+
+          {favouriteProperties.length === 0 ? (
+            <p>No favourites saved.</p>
+          ) : (
+            favouriteProperties.map((p) => (
+              <div key={p.id} className="property-card">
+                <img
+                  src={p.images[0]}
+                  alt="property"
+                  className="property-card-img"
+                />
+
+                <div className="property-card-content">
+                  <p className="property-title">{p.description}</p>
+                  <p>£{p.price}</p>
+
+                  <button onClick={() => removeFavourite(p.id)}>
+                    ❌ Remove
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      )}
     </div>
   );
 }
