@@ -1,0 +1,149 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "postcode": "BR5",
+      "dateAdded": "2022-10-12",
+      "images": [
+        "/images/house_1.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom1.jpg",
+        "/images/bedroom2.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "Three bedroom family house in Orpington",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "postcode": "BR6",
+      "dateAdded": "2022-09-14",
+      "images": [
+        "/images/flat_1.jpg",
+        "/images/livingroom.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom1.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg",
+        "/images/dining.jpg"
+      ],  
+      "description": "Two bedroom modern flat",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 950000,
+      "postcode": "NW1",
+      "dateAdded": "2023-01-20",
+      "images": [
+        "/images/house_2.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom.jpg",        
+        "/images/bedroom1.jpg",
+        "/images/bedroom2.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "Large four bedroom house in North London",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 275000,
+      "postcode": "SE1",
+      "dateAdded": "2023-03-05",
+      "images": [
+        "/images/flat_2.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "One bedroom city flat near transport links",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "postcode": "SW15",
+      "dateAdded": "2021-11-10",
+      "images": [
+        "/images/house_3.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom1.jpg",
+        "/images/bedroom2.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "Spacious five bedroom detached house",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 550000,
+      "postcode": "E14",
+      "dateAdded": "2022-06-18",
+      "images": [
+        "/images/flat_3.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom1.jpg",
+        "/images/bedroom2.jpg",
+        "/images/bedroom3.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "Three bedroom riverside apartment",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 480000,
+      "postcode": "CR0",
+      "dateAdded": "2023-08-01",
+      "images": [
+        "/images/house_4.jpg",
+        "/images/livingroom.jpg",
+        "/images/dining.jpg",
+        "/images/bathroom.jpg",
+        "/images/bedroom1.jpg",
+        "/images/bedroom2.jpg",
+        "/images/kitchen.jpg"
+      ],
+      "description": "Two bedroom starter home in Croydon",
+      "floorPlan": "/images/floorplan_1.jpg"
+
+    }
+  ]
+}

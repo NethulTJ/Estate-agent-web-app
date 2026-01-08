@@ -1,3 +1,6 @@
+import { Routes, Route } from "react-router-dom";
+import propertiesData from "./assets/data/properties.json";
+import Search from "./components/Search";
 import "./App.css";
 
 function App() {
