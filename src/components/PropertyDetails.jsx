@@ -75,6 +75,69 @@ function PropertyDetails({ properties }) {
           {isFavourite ? " Remove from Favourites" : " Add to Favourites"}
         </button>
 
+        {/* TABS */}
+        <div className="tabs">
+          <button
+            className={activeTab === "description" ? "active" : ""}
+            onClick={() => setActiveTab("description")}
+          >
+            Description
+          </button>
+          <button
+            className={activeTab === "floorplan" ? "active" : ""}
+            onClick={() => setActiveTab("floorplan")}
+          >
+            floorplan
+          </button>
+          <button
+            className={activeTab === "map" ? "active" : ""}
+            onClick={() => setActiveTab("map")}
+          >
+            map
+          </button>
+        </div>
+
+        {/* TAB CONTENT */}
+        <div style={{ marginTop: "10px" }}>
+          {activeTab === "description" && (
+            <div>
+              <p>
+                <strong>Description:</strong> {property.description}
+              </p>
+              <p>
+                <strong>Type:</strong> {property.type}
+              </p>
+              <p>
+                <strong>Bedrooms:</strong> {property.bedrooms}
+              </p>
+              <p>
+                <strong>Price:</strong> £{property.price}
+              </p>
+              <p>
+                <strong>Postcode:</strong> {property.postcode}
+              </p>
+            </div>
+          )}
+
+          {activeTab === "floorplan" && (
+            <div>
+              <img src={property.floorPlan} alt="Floor plan" width="400" />
+            </div>
+          )}
+
+          {activeTab === "map" && (
+            <div>
+              <iframe
+                title="map"
+                width="400"
+                height="300"
+                loading="lazy"
+                src={`https://www.google.com/maps?q=${property.postcode}&output=embed`}
+              ></iframe>
+            </div>
+          )}
+        </div>
+
         <br />
         <div className="back-bar">
           <Link to="/">← Back to Search</Link>
