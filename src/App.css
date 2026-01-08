@@ -1,0 +1,244 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e203b;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* ===== Page Container ===== */
+.page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== Property List ===== */
+.property-card {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.property-card p {
+  margin: 5px 0;
+}
+
+.property-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.property-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Image Gallery ===== */
+.gallery-main {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery-thumbs img {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.gallery-thumbs img:hover {
+  border-color: #2563eb;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 8px 14px;
+  margin: 8px 5px 0 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===== Tabs ===== */
+.tabs {
+  margin-top: 20px;
+}
+
+.tabs button {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.tabs button.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* ===== Map ===== */
+iframe {
+  border-radius: 6px;
+  border: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .gallery-thumbs {
+    flex-wrap: wrap;
+  }
+
+  .gallery-main {
+    max-width: 100%;
+  }
+}
+
+/* ===== Property Cards (Search Page) ===== */
+.property-card {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-3px);
+}
+
+.property-card-img {
+  width: 220px;
+  object-fit: cover;
+}
+
+.property-card-content {
+  padding: 15px;
+  flex: 1;
+}
+
+.property-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.view-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Property Details Layout ===== */
+.details-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== Back Button Bar ===== */
+.back-bar {
+  margin-top: 20px;
+  padding: 10px;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.back-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* ===== Responsive Cards ===== */
+@media (max-width: 700px) {
+  .property-card {
+    flex-direction: column;
+  }
+
+  .property-card-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* ===== Search Filters ===== */
+.search-container {
+  background: white;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.search-fields {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  text-align: left;
+}
+
+.field label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cbd5f5;
+}
+
+.search-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  margin: 0 5px;
+}
