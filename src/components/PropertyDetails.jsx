@@ -69,6 +69,12 @@ function PropertyDetails({ properties }) {
             />
           ))}
         </div>
+
+        {/* FAVOURITES BUTTON */}
+        <button onClick={toggleFavourite}>
+          {isFavourite ? " Remove from Favourites" : " Add to Favourites"}
+        </button>
+
         <br />
         <div className="back-bar">
           <Link to="/">← Back to Search</Link>
